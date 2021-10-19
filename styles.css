@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Colors */
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* ------- Mobile ------- 
+------------------------- */
+
+/* Global */
+html {
+    font-size: 15px;
+}
+body,
+button {
+    font-family: 'Lexend Deca', sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 327px;
+    justify-content: center;
+}
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+}
+p {
+    line-height: 2;
+    padding-bottom: 25px;
+    color: var(--transparent-white);
+    
+}
+/* Cards */
+.card {
+    padding: 48px;
+}
+
+#sedans {
+    background: var(--bright-orange);
+    border-radius: 15px 15px 0 0;
+}
+#suvs {
+    background: var(--dark-cyan);
+}
+#luxury {
+    background: var(--very-dark-cyan);
+    border-radius: 0 0 15px 15px;
+}
+
+    /* Icons */
+i {
+    width: 64px;
+    height: 40px; 
+    display: block;
+}
+#sedans i {
+    background: url('images/icon-sedans.svg') no-repeat;
+}
+#suvs i{ 
+    background: url('images/icon-suvs.svg') no-repeat;
+}
+#luxury i{
+    background: url('images/icon-luxury.svg') no-repeat;
+}
+
+button {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 25px;
+    font-size: inherit;
+}
+button:hover {
+    outline: 2px solid var(--very-light-gray);
+    background: none;
+    color: var(--very-light-gray)!important;
+}
+
+#sedans button{
+    color: var(--bright-orange);
+}
+#suvs button{
+    color: var(--dark-cyan);
+}
+#luxury button{
+    color: var(--very-dark-cyan);
+}
+.attribution { 
+    padding-top: 1em;
+    font-size: 11px; 
+    text-align: right; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* ------- Desktop ------- 
+------------------------- */
+
+/* grid-template-columns: repeat(3, 307px);
+grid-template-rows: 500px; */
+/* align-content: center; */
