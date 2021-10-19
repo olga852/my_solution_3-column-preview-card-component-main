@@ -34,17 +34,19 @@ main {
 }
 h2 {
     font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
     padding-top: 35px;
     padding-bottom: 25px;
     color: var(--very-light-gray);
     text-transform: uppercase;
 }
 p {
-    line-height: 2;
+    line-height: 1.8;
     padding-bottom: 25px;
     color: var(--transparent-white);
     
 }
+
 /* Cards */
 .card {
     padding: 48px;
@@ -52,17 +54,16 @@ p {
 
 #sedans {
     background: var(--bright-orange);
-    border-radius: 15px 15px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 #suvs {
     background: var(--dark-cyan);
 }
 #luxury {
     background: var(--very-dark-cyan);
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 8px 8px;
 }
 
-    /* Icons */
 i {
     width: 64px;
     height: 40px; 
@@ -89,7 +90,6 @@ button:hover {
     background: none;
     color: var(--very-light-gray)!important;
 }
-
 #sedans button{
     color: var(--bright-orange);
 }
@@ -99,6 +99,7 @@ button:hover {
 #luxury button{
     color: var(--very-dark-cyan);
 }
+
 .attribution { 
     padding-top: 1em;
     font-size: 11px; 
@@ -112,6 +113,30 @@ button:hover {
 /* ------- Desktop ------- 
 ------------------------- */
 
-/* grid-template-columns: repeat(3, 307px);
-grid-template-rows: 500px; */
-/* align-content: center; */
+
+
+@media (min-width: 920px) {
+    main {
+        height: 100vh;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: 500px;
+        align-content: center;
+    }
+    p{
+        padding-bottom: 83px;
+    }
+    .card {
+        height: 500px;
+    }
+    #sedans {
+        border-radius: 8px 0 0 8px;
+    }
+    #luxury {
+        border-radius: 0 8px 8px 0 ;
+    }
+    .attribution {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+}
