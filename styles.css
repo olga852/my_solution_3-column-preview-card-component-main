@@ -89,6 +89,7 @@ button:hover {
     outline: 2px solid var(--very-light-gray);
     background: none;
     color: var(--very-light-gray)!important;
+    cursor: pointer;
 }
 #sedans button{
     color: var(--bright-orange);
