@@ -31,6 +31,7 @@
 Десктоп
 
 ![image](https://user-images.githubusercontent.com/90684029/138063541-9100e632-22f9-4e90-a797-07699c698cc5.png)
+
 Мобильный
 
 ### Ссылки
